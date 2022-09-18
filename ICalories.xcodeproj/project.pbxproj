@@ -7,22 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		491DD35C28D6AE1000AB28E1 /* Nabla-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 491DD35B28D6AE1000AB28E1 /* Nabla-Regular.ttf */; };
+		491DD35F28D6AFA900AB28E1 /* GODOFWAR.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 491DD35E28D6AFA900AB28E1 /* GODOFWAR.TTF */; };
+		491DD36128D6C26000AB28E1 /* deleteFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491DD36028D6C26000AB28E1 /* deleteFoodView.swift */; };
 		499D564228D3B71E00D7204A /* ICaloriesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499D564128D3B71E00D7204A /* ICaloriesApp.swift */; };
 		499D564428D3B71E00D7204A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499D564328D3B71E00D7204A /* ContentView.swift */; };
-		499D564628D3B71F00D7204A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 499D564528D3B71F00D7204A /* Assets.xcassets */; };
+		499D564628D3B71F00D7204A /* Skyrus.png in Resources */ = {isa = PBXBuildFile; fileRef = 499D564528D3B71F00D7204A /* Skyrus.png */; };
 		499D564928D3B71F00D7204A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 499D564828D3B71F00D7204A /* Preview Assets.xcassets */; };
 		499D565128D3B85B00D7204A /* FoodModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 499D564F28D3B85B00D7204A /* FoodModel.xcdatamodeld */; };
 		499D565428D3BCEE00D7204A /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499D565328D3BCEE00D7204A /* DataController.swift */; };
+		49CC925928D63D4900B55C37 /* EditFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CC925828D63D4900B55C37 /* EditFoodView.swift */; };
+		49DA706528D4F19100D4CC64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49DA706428D4F19100D4CC64 /* Assets.xcassets */; };
+		49DA706928D5050100D4CC64 /* addFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DA706828D5050100D4CC64 /* addFoodView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		491DD35B28D6AE1000AB28E1 /* Nabla-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nabla-Regular.ttf"; sourceTree = "<group>"; };
+		491DD35D28D6AE6E00AB28E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		491DD35E28D6AFA900AB28E1 /* GODOFWAR.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = GODOFWAR.TTF; sourceTree = "<group>"; };
+		491DD36028D6C26000AB28E1 /* deleteFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = deleteFoodView.swift; sourceTree = "<group>"; };
 		499D563E28D3B71E00D7204A /* ICalories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ICalories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		499D564128D3B71E00D7204A /* ICaloriesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICaloriesApp.swift; sourceTree = "<group>"; };
 		499D564328D3B71E00D7204A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		499D564528D3B71F00D7204A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		499D564528D3B71F00D7204A /* Skyrus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Skyrus.png; path = ../../../../Downloads/Skyrus.png; sourceTree = "<group>"; };
 		499D564828D3B71F00D7204A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		499D565028D3B85B00D7204A /* FoodModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodModel.xcdatamodel; sourceTree = "<group>"; };
 		499D565328D3BCEE00D7204A /* DataController.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; tabWidth = 2; };
+		49CC925828D63D4900B55C37 /* EditFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFoodView.swift; sourceTree = "<group>"; };
+		49DA706428D4F19100D4CC64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49DA706828D5050100D4CC64 /* addFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addFoodView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +68,15 @@
 		499D564028D3B71E00D7204A /* ICalories */ = {
 			isa = PBXGroup;
 			children = (
+				491DD35D28D6AE6E00AB28E1 /* Info.plist */,
+				49DA706428D4F19100D4CC64 /* Assets.xcassets */,
 				499D565228D3BC0C00D7204A /* DataModel */,
 				499D564128D3B71E00D7204A /* ICaloriesApp.swift */,
+				491DD36028D6C26000AB28E1 /* deleteFoodView.swift */,
+				49CC925828D63D4900B55C37 /* EditFoodView.swift */,
 				499D564328D3B71E00D7204A /* ContentView.swift */,
-				499D564528D3B71F00D7204A /* Assets.xcassets */,
+				49DA706828D5050100D4CC64 /* addFoodView.swift */,
+				499D564528D3B71F00D7204A /* Skyrus.png */,
 				499D564728D3B71F00D7204A /* Preview Content */,
 			);
 			path = ICalories;
@@ -75,6 +93,8 @@
 		499D565228D3BC0C00D7204A /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
+				491DD35E28D6AFA900AB28E1 /* GODOFWAR.TTF */,
+				491DD35B28D6AE1000AB28E1 /* Nabla-Regular.ttf */,
 				499D565328D3BCEE00D7204A /* DataController.swift */,
 				499D564F28D3B85B00D7204A /* FoodModel.xcdatamodeld */,
 			);
@@ -140,7 +160,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				499D564928D3B71F00D7204A /* Preview Assets.xcassets in Resources */,
-				499D564628D3B71F00D7204A /* Assets.xcassets in Resources */,
+				49DA706528D4F19100D4CC64 /* Assets.xcassets in Resources */,
+				491DD35C28D6AE1000AB28E1 /* Nabla-Regular.ttf in Resources */,
+				491DD35F28D6AFA900AB28E1 /* GODOFWAR.TTF in Resources */,
+				499D564628D3B71F00D7204A /* Skyrus.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,10 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49DA706928D5050100D4CC64 /* addFoodView.swift in Sources */,
 				499D564428D3B71E00D7204A /* ContentView.swift in Sources */,
+				49CC925928D63D4900B55C37 /* EditFoodView.swift in Sources */,
 				499D565428D3BCEE00D7204A /* DataController.swift in Sources */,
 				499D564228D3B71E00D7204A /* ICaloriesApp.swift in Sources */,
 				499D565128D3B85B00D7204A /* FoodModel.xcdatamodeld in Sources */,
+				491DD36128D6C26000AB28E1 /* deleteFoodView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +312,7 @@
 				DEVELOPMENT_TEAM = SYWY3FGBS5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ICalories/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -315,6 +342,7 @@
 				DEVELOPMENT_TEAM = SYWY3FGBS5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ICalories/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
