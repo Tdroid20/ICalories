@@ -48,10 +48,7 @@ struct ContentView: View {
                 List {
                     ForEach(food) {
                         food in NavigationLink(destination: EditFoodView(food: food)) {
-                            VStack {
-                                Text(food.name!)
-                                         .bold()
-                            }
+                            FoodDetailView(FoodName: food.name!, foodCalories: food.calories, FoodDate: food.date!)
                         }
                     }.onDelete(perform: deleteFood)
                 }
@@ -96,8 +93,31 @@ struct ContentView: View {
                 DataController().save(context: managedObjectContext)
             }
         }
-
 }
+
+struct FoodDetailView: View {
+    
+    var FoodName: String = "Food is Not Specified"
+    var foodCalories: Double = 0.0;
+    var FoodDate: Date = Date()
+    
+    var body: some View {
+        HStack {
+            VStack(alignment: .leading, spacing: 5) {
+                Text(FoodName)
+                    .bold();
+                
+                HStack{
+                    Text("\(Int(foodCalories)) ") +
+                    Text("Kcal").foregroundColor(.red)
+                }
+                Text("Data da comida: ") + Text(FoodDate.formatted()).foregroundColor(.blue)
+
+            }
+        }
+    }
+}
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
