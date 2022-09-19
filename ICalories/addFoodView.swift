@@ -67,9 +67,9 @@ struct addFoodView: View {
             Text("Você não pode registrar uma comida sem definir um nome")
         })
         
-        .alert("❗┃Alert", isPresented: $isNameNull, actions: {
+        .alert("❗┃Alert", isPresented: $isCalorriesNull, actions: {
             Button("Ok", role: .cancel) {
-                isNameNull = false;
+                isCalorriesNull = false;
             }
         }, message: {
             Text("Você não pode registrar uma comida sem definir um valor para caloria")

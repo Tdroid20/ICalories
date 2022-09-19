@@ -35,12 +35,12 @@ struct EditFoodView: View {
                     Slider(value: $calories, in: 1...3000, step: 10 )
                 }.padding()
                 
-                HStack{
+                
                     Button("Submit"){
-                        DataController().addFood(name: self.name, calories: self.calories, context: managedObjContext )
+                        DataController().editFood(foodOld: food, name: self.name, calories: self.calories, context: managedObjContext )
                         dismiss()
                     }
-                }
+                
                 
             }
         }

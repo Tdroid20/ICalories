@@ -104,14 +104,19 @@ struct FoodDetailView: View {
     var body: some View {
         HStack {
             VStack(alignment: .leading, spacing: 5) {
+                Text("Nome da comida: ")
+                    .bold() +
                 Text(FoodName)
-                    .bold();
+                    .foregroundColor(.blue)
+                    .bold()
                 
                 HStack{
-                    Text("\(Int(foodCalories)) ") +
+                    Text("Calorias: ") +
+                    Text("\(Int(foodCalories))" + " ")
+                        .foregroundColor(.blue) +
                     Text("Kcal").foregroundColor(.red)
                 }
-                Text("Data da comida: ") + Text(FoodDate.formatted()).foregroundColor(.blue)
+                Text("Data da comida: ") + Text(FoodDate.formatted(date: .numeric, time: .shortened)).foregroundColor(.blue)
 
             }
         }
