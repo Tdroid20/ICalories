@@ -11,8 +11,8 @@ import SwiftUI;
 struct addFoodView: View {
     
     @Environment(\.managedObjectContext) var managedObjectContext;
+    @Environment(\.dismiss) var dismiss
     
-    @Binding var isAddFoodView: Bool;
     @State var name : String = "";
     @State var calories : Double = 0.0;
     @State var isNameNull: Bool = false;
@@ -43,8 +43,8 @@ struct addFoodView: View {
                         } else if(calories == 0.0) {
                             isCalorriesNull = true;
                         } else {
-                            DataController().addFood(name: name, calories: calories, context: managedObjectContext)
-                            isAddFoodView = false
+                            DataController().addFood(name: self.name, calories: self.calories, context: managedObjectContext)
+                            dismiss()
                         }
                         
                     }
@@ -76,5 +76,11 @@ struct addFoodView: View {
         })
 
         
+    }
+}
+
+struct AddFoodView_Previews: PreviewProvider {
+    static var previews: some View {
+        addFoodView()
     }
 }

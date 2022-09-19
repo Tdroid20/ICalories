@@ -21,19 +21,24 @@ struct ContentView: View {
             VStack {
                 HStack {
 // --------- Title
-                    Text("I")
-                        .foregroundColor(.blue)
-                    + Text("Calories")
-                        .foregroundColor(.red)
+                    VStack(alignment: .leading) {
+                        VStack {
+                            Text("I")
+                                .foregroundColor(.blue)
+                            + Text("Calories")
+                                .foregroundColor(.red)
+                            
+                        }.frame(width: .maximum(350, y0(30)), alignment: .leading)
+                            .fontWeight(.bold)
+                            .font(.custom(
+                                "GODOFWAR",
+                                size: 50))
+                            .underline(true, color: .cyan)
+
+                    }
                     
-                    }.frame(width: 400, alignment: .leading)
-                    .fontWeight(.bold)
-                    .font(.custom(
-                        "GODOFWAR",
-                        size: 50))
-                    .underline(true, color: .cyan)
-                
-// -------- Calories
+                }
+                // -------- Calories
                 Text("\(Int(getTotCalories())) Total de calorias")
                     .foregroundColor(.black)
                     .padding()
@@ -60,7 +65,7 @@ struct ContentView: View {
                     }
                 }
                 .sheet(isPresented: $isAddView) {
-                    addFoodView(isAddFoodView: $isAddView)
+                    addFoodView()
                 }
                 .toolbar {
                     ToolbarItem(placement: .navigationBarLeading) {
@@ -74,7 +79,13 @@ struct ContentView: View {
     }
     
     func getTotCalories() -> Double {
-        return 0.0
+        var caloriesToday: Double = 0.0;
+        for thisFood in food {
+            if(Calendar.current.isDateInToday(thisFood.date!)) {
+                caloriesToday += thisFood.calories
+            }
+        }
+        return caloriesToday;
     }
     
     func deleteFood(offsets: IndexSet){

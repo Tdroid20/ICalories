@@ -7,5 +7,7 @@
 		<string>Nabla-Regular.ttf</string>
 		<string>GODOFWAR.TTF</string>
 	</array>
+	<key>UILaunchScreen</key>
+	<dict/>
 </dict>
 </plist>
